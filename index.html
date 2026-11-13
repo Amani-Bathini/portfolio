@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Amani Bathini | Python Developer &amp; AI/ML Enthusiast</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description"
+    content="Personal portfolio of Amani Bathini - Computer Science Graduate (2026), Aspiring Software Developer, and AI/ML Enthusiast with hands-on experience in Python, RAG architectures, and database systems.">
+  <meta name="keywords"
+    content="Amani Bathini, Python Developer, Aspiring Software Developer, AI Engineer, Machine Learning, RAG, NLP, Streamlit, SQL, Portfolio, Computer Science">
+  <meta name="author" content="Amani Bathini">
+  <meta property="og:title" content="Amani Bathini | Python Developer &amp; AI/ML Enthusiast">
+  <meta property="og:description"
+    content="Explore production-grade AI/ML projects, multimodal RAG systems, normalized SQL platforms, and academic achievements.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/brain.svg">
+
+  <!-- Google Fonts: Cormorant Garamond & Playfair Display for editorial elegance + Plus Jakarta Sans & JetBrains Mono for modern UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+  <!-- Scroll Progress Indicator Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Ambient Light Noise & Subtle Glow Overlays -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-middle" aria-hidden="true"></div>
+
+  <!-- ========================================================
+       A. NAVIGATION BAR
+       ======================================================== -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#top" class="nav-brand" aria-label="Amani Bathini Portfolio Home">
+        <span class="brand-monogram">AB</span>
+        <span class="brand-text">AMANI<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#top" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Resume + Mobile Hamburger) -->
+      <div class="nav-actions">
+        <a href="assets/resume.pdf" class="btn btn-primary btn-sm btn-nav-resume" download="Amani_Bathini_Resume.pdf"
+          id="navResumeBtn">
+          <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="brand-text">AMANI<span class="brand-dot">.</span></div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#top" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#education" class="mobile-nav-link">Education</a></li>
+      <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="assets/resume.pdf" class="btn btn-primary btn-block" download="Amani_Bathini_Resume.pdf">
+        <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span>Download Full Resume</span>
+      </a>
+      <div class="drawer-socials">
+        <a href="https://www.linkedin.com/in/amanibathini/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">LinkedIn</a>
+        <span>•</span>
+        <a href="https://github.com/Amani-Bathini" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub">GitHub</a>
+        <span>•</span>
+        <a href="https://leetcode.com/u/amanibathini/" target="_blank" rel="noopener noreferrer"
+          aria-label="LeetCode">LeetCode</a>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+
+  <!-- ========================================================
+       B. HERO SECTION
+       ======================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-container">
+      <div class="hero-grid">
+
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="availability-pill" data-reveal="fade-down">
+            <span class="status-indicator">
+              <span class="pulse-dot"></span>
+            </span>
+            <span class="pill-text">Available for Entry-Level Roles • 2026 Graduate</span>
+          </div>
+
+          <!-- Hero Name with Editorial Monogram Accent -->
+          <div class="hero-pretitle" data-reveal="fade-up" data-delay="100">
+            <span class="editorial-dash"></span>
+            <span>PORTFOLIO &amp; ENGINEERING SHOWCASE</span>
+          </div>
+
+          <h1 class="hero-title" data-reveal="fade-up" data-delay="200">
+            AMANI <span class="highlight-burgundy">BATHINI</span>
+          </h1>
+
+          <!-- Animated Dynamic Typist Title -->
+          <div class="hero-dynamic-subtitle" data-reveal="fade-up" data-delay="300" aria-label="Professional Roles">
+            <span class="typing-prefix">I am a </span>
+            <span class="typing-text" id="typingText">Python Developer</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <!-- Verified Introduction -->
+          <p class="hero-intro" data-reveal="fade-up" data-delay="400">
+            "Hello! I'm Amani, a Computer Science graduate passionate about building intelligent applications and
+            solving real-world problems through Python, Artificial Intelligence, Machine Learning, and modern web
+            technologies."
+          </p>
+
+          <!-- Core Value Badges -->
+          <div class="hero-tags" data-reveal="fade-up" data-delay="500">
+            <span class="tag-badge"><svg class="tag-icon" viewBox="0 0 24 24" width="13" height="13" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M12 2a4 4 0 0 0-4 4v2h4a2 2 0 0 1 2 2v2h2a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4h-4z" />
+              </svg> Python Developer</span>
+            <span class="tag-badge"><svg class="tag-icon" viewBox="0 0 24 24" width="13" height="13" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15" />
+              </svg> Multimodal RAG &amp; NLP</span>
+            <span class="tag-badge"><svg class="tag-icon" viewBox="0 0 24 24" width="13" height="13" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+              </svg> Normalized SQL &amp; Analytics</span>
+            <span class="tag-badge"><svg class="tag-icon" viewBox="0 0 24 24" width="13" height="13" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7" />
+              </svg> 8.42 CGPA</span>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions" data-reveal="fade-up" data-delay="600">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>View My Projects</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="7 13 12 18 17 13" />
+                <polyline points="7 6 12 11 17 6" />
+              </svg>
+            </a>
+
+            <a href="assets/resume.pdf" class="btn btn-secondary btn-lg" download="Amani_Bathini_Resume.pdf"
+              id="heroResumeDownload">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <button type="button" class="btn btn-ghost btn-lg" id="previewResumeBtn" aria-label="Preview resume modal">
+              <span>Preview</span>
+            </button>
+          </div>
+
+          <!-- Social Links & Quick Contact -->
+          <div class="hero-socials" data-reveal="fade-up" data-delay="700">
+            <span class="social-label">Connect:</span>
+            <div class="social-links-row">
+              <a href="https://www.linkedin.com/in/amanibathini/" target="_blank" rel="noopener noreferrer"
+                class="social-link" title="LinkedIn Profile" aria-label="Amani Bathini LinkedIn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="https://github.com/Amani-Bathini" target="_blank" rel="noopener noreferrer" class="social-link"
+                title="GitHub Profile" aria-label="Amani Bathini GitHub">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+              </a>
+              <a href="https://leetcode.com/u/amanibathini/" target="_blank" rel="noopener noreferrer"
+                class="social-link" title="LeetCode Profile" aria-label="Amani Bathini LeetCode">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                </svg>
+              </a>
+              <a href="mailto:amanibathini28@gmail.com" class="social-link" title="Send Direct Email"
+                aria-label="Email Amani">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </a>
+            </div>
+            <span class="social-divider">|</span>
+            <a href="mailto:amanibathini28@gmail.com" class="hero-email-quick">amanibathini28@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait / Visual Card Column -->
+        <div class="hero-visual" data-reveal="fade-left" data-delay="300">
+          <div class="portrait-card-wrapper">
+            <!-- Decorative Gold Frame -->
+            <div class="portrait-gold-frame" aria-hidden="true"></div>
+
+            <!-- Main Portrait SVG -->
+            <div class="portrait-card">
+              <img src="assets/images/amani (2).jpeg"
+                alt="Amani Bathini - Computer Science Graduate &amp; AI/ML Developer" class="portrait-img" width="500"
+                height="500">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       C. ABOUT ME SECTION
+       ======================================================== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header text-center" data-reveal="fade-up">
+        <span class="section-pretitle">BACKGROUND &amp; ASPIRATIONS</span>
+        <h2 class="section-title">About <span class="highlight-burgundy">Me</span></h2>
+        <div class="section-gold-rule"></div>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Story Column -->
+        <div class="about-story" data-reveal="fade-right">
+          <div class="editorial-card">
+            <h3 class="story-heading">Computer Science Graduate &amp; Aspiring Software Developer</h3>
+            <p class="story-paragraph">
+              I am a B.Tech Computer Science and Engineering graduate from <strong>Vaageswari College of
+                Engineering</strong> (Karimnagar, TS, India, Class of 2026) with an <strong>8.42/10 CGPA</strong>. My
+              academic journey and hands-on software development focus on building scalable Python applications,
+              database architectures, and applied Artificial Intelligence.
+            </p>
+            <p class="story-paragraph">
+              With rigorous experience spanning <strong>Retrieval-Augmented Generation (RAG)</strong>, <strong>Natural
+                Language Processing (NLP)</strong>, <strong>LLM Prompt Engineering</strong>, and normalized <strong>SQL
+                BI layers</strong>, I specialize in translating complex technical concepts into robust, user-centric
+              software solutions.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                <div>
+                  <strong>Vaageswari College of Engineering</strong>
+                  <p>Computer Science &amp; Engineering (2022–2026)</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                <div>
+                  <strong>Python &amp; SQL Core</strong>
+                  <p>Strong foundations in data structures, algorithms &amp; RDBMS</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                <div>
+                  <strong>Applied AI &amp; Generative AI</strong>
+                  <p>Hands-on multimodal RAG, BERT embeddings, zero-shot verification</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                <div>
+                  <strong>Continuous Problem Solving</strong>
+                  <p>Dedicated to clean code, modular architecture, and rapid learning</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Objective Quote Box -->
+            <blockquote class="objective-blockquote">
+              <span class="quote-mark">“</span>
+              Seeking an entry-level opportunity to apply technical knowledge, contribute to real-world projects, and
+              grow as a software professional.
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Statistics & Quick Metrics Column -->
+        <div class="about-stats-column" data-reveal="fade-left">
+
+          <div class="stats-cards-grid">
+
+            <!-- Stat 1: Projects -->
+            <div class="stat-card" data-counter-card>
+              <div class="stat-badge-top">PRODUCTION-GRADE</div>
+              <div class="stat-number-wrapper">
+                <span class="stat-number" data-target="2">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <div class="stat-label">Major Projects</div>
+              <p class="stat-description">End-to-end multimodal RAG assistant &amp; normalized 11-table IT helpdesk
+                system.</p>
+            </div>
+
+            <!-- Stat 2: Internship -->
+            <div class="stat-card" data-counter-card>
+              <div class="stat-badge-top">INDUSTRY COLLABORATION</div>
+              <div class="stat-number-wrapper">
+                <span class="stat-number" data-target="1">0</span>
+                <span class="stat-unit">x</span>
+              </div>
+              <div class="stat-label">AI &amp; ML Internship</div>
+              <p class="stat-description">Edunet Foundation in collaboration with AICTE through IBM SkillsBuild Program.
+              </p>
+            </div>
+
+            <!-- Stat 3: CGPA -->
+            <div class="stat-card" data-counter-card>
+              <div class="stat-badge-top">ACADEMIC RIGOR</div>
+              <div class="stat-number-wrapper">
+                <span class="stat-number" data-target="8.42" data-decimals="2">0.00</span>
+                <span class="stat-unit">/10</span>
+              </div>
+              <div class="stat-label">CGPA Achieved</div>
+              <p class="stat-description">Vaageswari College of Engineering, Computer Science Engineering.</p>
+            </div>
+
+            <!-- Stat 4: Graduation Year -->
+            <div class="stat-card" data-counter-card>
+              <div class="stat-badge-top">CAREER TIMELINE</div>
+              <div class="stat-number-wrapper">
+                <span class="stat-number" data-target="2026">0</span>
+              </div>
+              <div class="stat-label">Graduate Class</div>
+              <p class="stat-description">Immediate availability for full-time roles, internships, and associate
+                engineering.</p>
+            </div>
+
+          </div>
+
+          <!-- Quick Actions & Contact Jump -->
+          <div class="about-cta-box">
+            <div class="cta-box-text">
+              <h4>Interested in interviewing or collaborating?</h4>
+              <p>Explore my technical breakdown below or schedule an introductory conversation.</p>
+            </div>
+            <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       D. TECHNICAL SKILLS SECTION
+       ======================================================== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header text-center" data-reveal="fade-up">
+        <span class="section-pretitle">TECHNICAL EXPERTISE &amp; STACK</span>
+        <h2 class="section-title">Technical <span class="highlight-burgundy">Skills</span></h2>
+        <div class="section-gold-rule"></div>
+        <p class="section-subtitle">
+          Carefully organized technical competencies extracted from real-world application builds, production
+          deployments, and academic projects. No misleading percentages—only verified technology stacks.
+        </p>
+      </div>
+
+      <!-- Skills Category Filter Tabs -->
+      <div class="skills-filter-container" data-reveal="fade-up" data-delay="100">
+        <div class="filter-pills" role="tablist" aria-label="Skills Category Filter">
+          <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-pill" data-filter="programming" role="tab" aria-selected="false">Programming</button>
+          <button class="filter-pill" data-filter="aiml" role="tab" aria-selected="false">AI &amp; Machine
+            Learning</button>
+          <button class="filter-pill" data-filter="genai" role="tab" aria-selected="false">Generative AI</button>
+          <button class="filter-pill" data-filter="tools" role="tab" aria-selected="false">AI Tools &amp;
+            Libraries</button>
+          <button class="filter-pill" data-filter="webdb" role="tab" aria-selected="false">Web &amp; Databases</button>
+        </div>
+      </div>
+
+      <!-- Categorized Skills Grid -->
+      <div class="skills-grid" id="skillsGrid">
+
+        <!-- Category 1: Programming -->
+        <div class="skill-category-card" data-category="programming" data-reveal="fade-up">
+          <div class="category-header">
+            <div class="category-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="category-title">Programming Languages</h3>
+              <span class="category-count">2 Core Languages</span>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Python</span>
+              <span class="chip-meta">Object-Oriented, Scripts, Data</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">SQL</span>
+              <span class="chip-meta">CTEs, Window Funcs, Joins</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: AI & Machine Learning -->
+        <div class="skill-category-card" data-category="aiml" data-reveal="fade-up" data-delay="100">
+          <div class="category-header">
+            <div class="category-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-5.04z" />
+                <path
+                  d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-5.04z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="category-title">AI &amp; Machine Learning</h3>
+              <span class="category-count">5 Core Domains</span>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Artificial Intelligence</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Machine Learning</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Natural Language Processing (NLP)</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Deep Learning Fundamentals</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Text Classification</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Generative AI -->
+        <div class="skill-category-card" data-category="genai" data-reveal="fade-up" data-delay="150">
+          <div class="category-header">
+            <div class="category-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="category-title">Generative AI</h3>
+              <span class="category-count">3 Applied Paradigms</span>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <div class="skill-chip highlight-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">LLM Fundamentals</span>
+              <span class="chip-meta">Architectures &amp; Inference</span>
+            </div>
+            <div class="skill-chip highlight-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">RAG (Retrieval-Augmented Gen)</span>
+              <span class="chip-meta">Hybrid Search &amp; Citations</span>
+            </div>
+            <div class="skill-chip highlight-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Prompt Engineering</span>
+              <span class="chip-meta">Zero-Shot &amp; Structured Outputs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: AI Tools & Libraries -->
+        <div class="skill-category-card" data-category="tools" data-reveal="fade-up" data-delay="200">
+          <div class="category-header">
+            <div class="category-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="category-title">AI Tools &amp; Libraries</h3>
+              <span class="category-count">5 Core Packages</span>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Hugging Face Transformers</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Pandas</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">NumPy</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">NLTK</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5: Web Technologies -->
+        <div class="skill-category-card" data-category="webdb" data-reveal="fade-up" data-delay="250">
+          <div class="category-header">
+            <div class="category-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="category-title">Web Technologies</h3>
+              <span class="category-count">4 Web Stacks</span>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">HTML5</span>
+              <span class="chip-meta">Semantic Structure</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">CSS3</span>
+              <span class="chip-meta">Grid, Flexbox, Animations</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">JavaScript</span>
+              <span class="chip-meta">Vanilla DOM &amp; APIs</span>
+            </div>
+            <div class="skill-chip highlight-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Streamlit</span>
+              <span class="chip-meta">Data &amp; AI Dashboards</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6: Databases & ORM -->
+        <div class="skill-category-card" data-category="webdb" data-reveal="fade-up" data-delay="300">
+          <div class="category-header">
+            <div class="category-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="category-title">Databases &amp; ORM</h3>
+              <span class="category-count">4 Storage Systems</span>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">MySQL</span>
+              <span class="chip-meta">Relational Normalization</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">PostgreSQL</span>
+              <span class="chip-meta">Knowledge Base Store</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">SQLite</span>
+              <span class="chip-meta">Embedded Database</span>
+            </div>
+            <div class="skill-chip highlight-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">SQLAlchemy</span>
+              <span class="chip-meta">Python ORM Engine</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 7: Developer Tools & Environment -->
+        <div class="skill-category-card" data-category="tools" data-reveal="fade-up" data-delay="350">
+          <div class="category-header">
+            <div class="category-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="category-title">Developer Tools</h3>
+              <span class="category-count">3 Environments</span>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">Git</span>
+              <span class="chip-meta">Version Control</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">GitHub</span>
+              <span class="chip-meta">Collaboration &amp; CI</span>
+            </div>
+            <div class="skill-chip">
+              <span class="chip-dot"></span>
+              <span class="chip-name">VS Code</span>
+              <span class="chip-meta">Primary IDE</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       E. FEATURED PROJECTS SECTION
+       ======================================================== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header text-center" data-reveal="fade-up">
+        <span class="section-pretitle">REAL-WORLD APPLICATIONS &amp; SYSTEMS</span>
+        <h2 class="section-title">Featured <span class="highlight-burgundy">Projects</span></h2>
+        <div class="section-gold-rule"></div>
+        <p class="section-subtitle">
+          Detailed engineering breakdowns of systems built, tested, and validated. Explore verified metrics,
+          architectural blueprints, and technology stacks directly from my resume.
+        </p>
+      </div>
+
+      <div class="projects-list">
+
+        <!-- PROJECT 1: Smart Memory Vault -->
+        <article class="project-showcase-card" data-reveal="fade-up">
+
+          <div class="project-card-header">
+            <div class="project-meta-strip">
+              <span class="project-badge gold-badge">AI MULTIMODAL KNOWLEDGE ASSISTANT</span>
+              <span class="project-date">September 2026</span>
+            </div>
+            <h3 class="project-title">Smart Memory Vault: AI Multimodal Knowledge Assistant</h3>
+            <p class="project-summary">
+              An AI-powered knowledge assistant that ingests diverse content formats (PDFs, OCR scanned images, YouTube
+              transcripts, and audio notes) into a unified semantic searchable knowledge base with hybrid retrieval,
+              automated synthesis, and multi-user authentication.
+            </p>
+          </div>
+
+          <!-- Project Verified Metrics Strip -->
+          <div class="project-metrics-strip">
+            <div class="p-metric-item">
+              <span class="p-metric-value">50+</span>
+              <span class="p-metric-label">Documents Processed</span>
+            </div>
+            <div class="p-metric-item">
+              <span class="p-metric-value">300+</span>
+              <span class="p-metric-label">Semantic Chunks</span>
+            </div>
+            <div class="p-metric-item highlight-metric">
+              <span class="p-metric-value">91%</span>
+              <span class="p-metric-label">Top-3 Retrieval Accuracy</span>
+            </div>
+            <div class="p-metric-item">
+              <span class="p-metric-value">25+</span>
+              <span class="p-metric-label">Active Users</span>
+            </div>
+            <div class="p-metric-item">
+              <span class="p-metric-value">1.2s</span>
+              <span class="p-metric-label">Average Response Time</span>
+            </div>
+          </div>
+
+          <!-- Project Showcase Visual & Detail Layout -->
+          <div class="project-body-grid">
+
+            <!-- Left: Interactive Preview Image -->
+            <div class="project-image-box">
+              <div class="project-img-frame">
+                <img src="assets/images/smart-memory.png" alt="Smart Memory Vault Application Interface Mockup"
+                  class="project-img" loading="lazy">
+                <div class="project-img-overlay">
+                  <button type="button" class="btn btn-secondary btn-sm inspect-btn" data-modal="modal-project-1">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8" />
+                      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <span>Inspect Pipeline Details</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Features & Architecture Checklist -->
+            <div class="project-details">
+              <h4 class="details-heading">Key Features &amp; Engineering Implementation:</h4>
+
+              <ul class="feature-bullets">
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Multimodal Ingestion:</strong> Ingests PDFs, images (via OCR), YouTube transcripts, and
+                    audio notes into a structured knowledge base of 50+ documents.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Hybrid Retrieval Architecture:</strong> Implemented chunking and hybrid TF-IDF +
+                    embedding retrieval with cosine similarity, returning answers with source citations and confidence
+                    scores.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Automated NLP Pipelines:</strong> Built end-to-end categorization, summarization,
+                    sentiment scoring, and auto-generated flashcards/quizzes using NLTK and scikit-learn.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Production Security &amp; Deployment:</strong> Secured application with bcrypt
+                    multi-user authentication; deployed on Streamlit Cloud supporting 25+ active users.</span>
+                </li>
+              </ul>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">SQLAlchemy</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">OCR</span>
+                <span class="tech-tag">RAG</span>
+                <span class="tech-tag">NLTK</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Bcrypt</span>
+              </div>
+
+              <!-- Action Links (Clean placeholders clearly labeled per resume guidelines) -->
+              <div class="project-action-row">
+                <button type="button" class="btn btn-primary btn-sm inspect-btn" data-modal="modal-project-1">
+                  <span>Architecture Deep Dive</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6" />
+                  </svg>
+                </button>
+
+                <a href="https://smart-memory-vault.streamlit.app/" class="btn btn-secondary btn-sm"
+                  title="Contact author for live demo instance access">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  <span>Request Demo Instance</span>
+                </a>
+
+                <a href="https://github.com/Amani-Bathini/smart-memory-vault-project" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-ghost btn-sm" title="View Source Code Repository">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PROJECT 2: IT Helpdesk and Ticket Management System -->
+        <article class="project-showcase-card" data-reveal="fade-up">
+
+          <div class="project-card-header">
+            <div class="project-meta-strip">
+              <span class="project-badge burgundy-badge">ENTERPRISE SQL PLATFORM</span>
+              <span class="project-date">October 2026</span>
+            </div>
+            <h3 class="project-title">IT Helpdesk and Ticket Management System</h3>
+            <p class="project-summary">
+              A comprehensive relational ticket management platform designed to streamline IT support operations,
+              enforce dynamic service-level agreements (SLAs), auto-assign tickets based on agent workload, and deliver
+              real-time operational analytics through interactive BI dashboards.
+            </p>
+          </div>
+
+          <!-- Project Verified Metrics Strip -->
+          <div class="project-metrics-strip">
+            <div class="p-metric-item">
+              <span class="p-metric-value">11</span>
+              <span class="p-metric-label">Normalized Tables</span>
+            </div>
+            <div class="p-metric-item">
+              <span class="p-metric-value">4</span>
+              <span class="p-metric-label">RBAC Roles</span>
+            </div>
+            <div class="p-metric-item highlight-metric">
+              <span class="p-metric-value">-40%</span>
+              <span class="p-metric-label">Routing Delay Reduction</span>
+            </div>
+            <div class="p-metric-item highlight-metric">
+              <span class="p-metric-value">94%+</span>
+              <span class="p-metric-label">SLA Compliance</span>
+            </div>
+            <div class="p-metric-item">
+              <span class="p-metric-value">&lt;500ms</span>
+              <span class="p-metric-label">Dashboard Refresh Time</span>
+            </div>
+          </div>
+
+          <!-- Project Showcase Visual & Detail Layout -->
+          <div class="project-body-grid">
+
+            <!-- Left: Interactive Preview Image -->
+            <div class="project-image-box">
+              <div class="project-img-frame">
+                <img src="assets/images/it-helpdesk.jpeg" alt="IT Helpdesk and Ticket Management System Interface Mockup"
+                  class="project-img" loading="lazy">
+                <div class="project-img-overlay">
+                  <button type="button" class="btn btn-secondary btn-sm inspect-btn" data-modal="modal-project-2">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8" />
+                      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <span>Inspect Schema &amp; SLA Engine</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Features & Architecture Checklist -->
+            <div class="project-details">
+              <h4 class="details-heading">Key Features &amp; Engineering Implementation:</h4>
+
+              <ul class="feature-bullets">
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span><strong>11-Table Normalized Schema:</strong> Architected normalized MySQL relational model with
+                    4 Role-Based Access Control (RBAC) tiers and automated audit logging across 6+ lifecycle
+                    states.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Dynamic 4-Tier SLA Engine:</strong> Developed automated assignment algorithm that
+                    matches tickets by priority and agent queue depth, cutting delays by 40% and maintaining 94%+
+                    compliance.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span><strong>Advanced SQL BI Layer:</strong> Formulated 7+ analytical views utilizing Common Table
+                    Expressions (CTEs) and Window Functions to compute MTTR (Mean Time to Resolution) and departmental
+                    trends.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span><strong>High-Performance UI:</strong> Built responsive Streamlit &amp; Plotly dashboards with
+                    bcrypt session auth, optimizing SQLAlchemy query execution to achieve sub-500ms refresh
+                    times.</span>
+                </li>
+              </ul>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-tags">
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQL (CTEs &amp; Window Funcs)</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">SQLAlchemy</span>
+                <span class="tech-tag">Bcrypt</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-action-row">
+                <button type="button" class="btn btn-primary btn-sm inspect-btn" data-modal="modal-project-2">
+                  <span>Schema &amp; Architecture</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6" />
+                  </svg>
+                </button>
+
+                <a href="https://it-desk-support.streamlit.app/" class="btn btn-secondary btn-sm"
+                  title="Contact author for code walkthrough">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  <span>Request Code Walkthrough</span>
+                </a>
+
+                <a href="https://github.com/Amani-Bathini/it-helpdesk-ticket-management-system" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-ghost btn-sm" title="View Source Code Repository">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       F. INTERNSHIP EXPERIENCE SECTION
+       ======================================================== -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header text-center" data-reveal="fade-up">
+        <span class="section-pretitle">PROFESSIONAL WORK HISTORY</span>
+        <h2 class="section-title">Internship <span class="highlight-burgundy">Experience</span></h2>
+        <div class="section-gold-rule"></div>
+        <p class="section-subtitle">
+          Hands-on machine learning development, model evaluation, and deployment under nationwide collaborative
+          programs.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+
+        <div class="timeline-card" data-reveal="fade-up">
+          <div class="timeline-header">
+            <div class="timeline-role-info">
+              <span class="role-badge">AI &amp; ML INTERN</span>
+              <h3 class="role-title">Edunet Foundation in collaboration with AICTE through IBM SkillsBuild Program</h3>
+              <div class="role-sub">
+                <span class="sub-item"><strong>Project:</strong> AI News Intelligent System – Fake News Detection</span>
+                <span class="sub-sep">•</span>
+                <span class="sub-item"><strong>Duration:</strong> January 2025 – February 2025 (6 Weeks)</span>
+              </div>
+            </div>
+
+            <!-- Verified Accuracy Badge -->
+            <div class="accuracy-highlight-badge">
+              <span class="acc-number">94.1%</span>
+              <span class="acc-text">Verified Model Accuracy</span>
+            </div>
+          </div>
+
+          <div class="timeline-body-grid">
+
+            <div class="timeline-content">
+              <p class="timeline-intro">
+                Spearheaded the development of a production-ready intelligent classification platform designed to
+                evaluate news authenticity, combat viral misinformation, and output real-time confidence scores.
+              </p>
+
+              <h4 class="responsibilities-title">Core Responsibilities &amp; Key Deliverables:</h4>
+              <ul class="responsibilities-list">
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Developed a fake news detection system using Python to classify news articles as genuine or
+                    fabricated.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Implemented hybrid BERT and TF-IDF classification, achieving verified <strong>94.1%
+                      accuracy</strong> without data leakage or overfitting.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Built NLP preprocessing pipelines (tokenization, entity masking, lemmatization) and zero-shot
+                    verification pipelines to improve detection reliability.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Deployed an interactive Streamlit dashboard presenting real-time predictions, explainable
+                    confidence metrics, and linguistic attention weights.</span>
+                </li>
+              </ul>
+
+              <!-- Tech chips -->
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">BERT</span>
+                <span class="tech-tag">TF-IDF</span>
+                <span class="tech-tag">NLP Preprocessing</span>
+                <span class="tech-tag">Zero-Shot Verification</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">IBM SkillsBuild</span>
+              </div>
+            </div>
+
+            <div class="timeline-visual">
+              <img src="assets/images/fake-news.png" alt="Fake News Detection System Pipeline Architecture"
+                class="internship-preview-img" loading="lazy">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       G. EDUCATION SECTION
+       ======================================================== -->
+  <section class="section education-section" id="education">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header text-center" data-reveal="fade-up">
+        <span class="section-pretitle">ACADEMIC FOUNDATION</span>
+        <h2 class="section-title">Academic <span class="highlight-burgundy">Education</span></h2>
+        <div class="section-gold-rule"></div>
+      </div>
+
+      <div class="education-card-wrapper" data-reveal="fade-up">
+        <div class="education-card">
+
+          <div class="edu-top">
+            <div class="edu-crest-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+            </div>
+            <div class="edu-title-group">
+              <span class="edu-degree-badge">UNDERGRADUATE DEGREE</span>
+              <h3 class="edu-degree">B.Tech in Computer Science and Engineering</h3>
+              <div class="edu-institution">Vaageswari College of Engineering, Karimnagar</div>
+              <div class="edu-meta-row">
+                <span><strong>Duration:</strong> 2022 – 2026</span>
+                <span>•</span>
+                <span><strong>Location:</strong> Telangana, India</span>
+                <span>•</span>
+                <span class="edu-cgpa-pill"><strong>CGPA:</strong> 8.42 / 10</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-divider"></div>
+
+          <div class="edu-body">
+            <h4 class="edu-subtitle">Relevant Computer Science Coursework &amp; Competencies:</h4>
+            <div class="coursework-grid">
+              <div class="course-chip">Data Structures &amp; Algorithms</div>
+              <div class="course-chip">Database Management Systems (DBMS)</div>
+              <div class="course-chip">Object-Oriented Programming (Python)</div>
+              <div class="course-chip">Machine Learning &amp; AI Systems</div>
+              <div class="course-chip">Natural Language Processing</div>
+              <div class="course-chip">Operating Systems &amp; Architecture</div>
+              <div class="course-chip">Computer Networks</div>
+              <div class="course-chip">Software Engineering Principles</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       H. CERTIFICATIONS & ACHIEVEMENTS SECTION
+       ======================================================== -->
+  <section class="section cert-section" id="certifications">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header text-center" data-reveal="fade-up">
+        <span class="section-pretitle">CREDENTIALS &amp; LEADERSHIP</span>
+        <h2 class="section-title">Certifications &amp; <span class="highlight-burgundy">Achievements</span></h2>
+        <div class="section-gold-rule"></div>
+      </div>
+
+      <!-- Split Grid: Certifications Left, Achievements Right -->
+      <div class="credentials-grid">
+
+        <!-- Left: Certifications -->
+        <div class="cert-column" data-reveal="fade-right">
+          <div class="column-subhead">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7" />
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+            </svg>
+            <h3>Professional Certifications</h3>
+          </div>
+
+          <!-- Cert Card 1 -->
+          <div class="credential-card">
+            <div class="cred-icon-box gold-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <div class="cred-info">
+              <div class="cred-issuer-row">
+                <span class="cred-issuer">IBM SkillsBuild</span>
+                <span class="cred-date">February 2026</span>
+              </div>
+              <h4 class="cred-title">Artificial Intelligence Fundamentals (Credly Badge)</h4>
+              <p class="cred-description">
+                Verified foundational competence in core AI concepts, neural networks, ethics, natural language
+                processing, and machine learning architectures.
+              </p>
+              <div class="cred-footer">
+                <span class="cred-verified-pill"><span class="pill-dot"></span> Credly Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert Card 2 -->
+          <div class="credential-card">
+            <div class="cred-icon-box burgundy-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-5.04z" />
+              </svg>
+            </div>
+            <div class="cred-info">
+              <div class="cred-issuer-row">
+                <span class="cred-issuer">Edunet &amp; IBM SkillsBuild</span>
+                <span class="cred-date">February 2026</span>
+              </div>
+              <h4 class="cred-title">Edunet Artificial Intelligence</h4>
+              <p class="cred-description">
+                Comprehensive training covering model fine-tuning, applied machine learning pipelines, feature
+                engineering, and hands-on Python deployment workflows.
+              </p>
+              <div class="cred-footer">
+                <span class="cred-verified-pill"><span class="pill-dot"></span> Program Certified</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Achievements -->
+        <div class="achieve-column" data-reveal="fade-left">
+          <div class="column-subhead">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+              <path d="M4 22h16" />
+              <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+              <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+            </svg>
+            <h3>Leadership &amp; Honors</h3>
+          </div>
+
+          <!-- Achievement 1 -->
+          <div class="achievement-card">
+            <div class="achieve-badge-icon">
+              <span>01</span>
+            </div>
+            <div class="achieve-info">
+              <span class="achieve-role-tag">TEAM LEADERSHIP</span>
+              <h4 class="achieve-title">Project Team Lead During College Projects</h4>
+              <p class="achieve-text">
+                Served as Team Lead during major engineering college projects, successfully coordinating
+                cross-functional team activities, setting architectural guidelines, managing milestones, and ensuring
+                on-time delivery of technical deliverables.
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievement 2 -->
+          <div class="achievement-card">
+            <div class="achieve-badge-icon">
+              <span>02</span>
+            </div>
+            <div class="achieve-info">
+              <span class="achieve-role-tag">TECHNICAL COMMUNICATION</span>
+              <h4 class="achieve-title">Top 5 Position in College-Level Presentation</h4>
+              <p class="achieve-text">
+                Secured a Top 5 position in a competitive college-level technical presentation, demonstrating synthesis
+                of complex engineering concepts, presentation clarity, and effective communication before faculty and
+                peer panels.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       J. CONTACT SECTION
+       ======================================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header text-center" data-reveal="fade-up">
+        <span class="section-pretitle">GET IN TOUCH</span>
+        <h2 class="section-title">Let's <span class="highlight-burgundy">Connect</span></h2>
+        <div class="section-gold-rule"></div>
+        <p class="section-subtitle">
+          I am actively looking for entry-level opportunities as a Python Developer, Software Engineer, or AI/ML
+          Associate. Feel free to reach out directly or leave a message.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: Direct Contact Information Cards -->
+        <div class="contact-info-column" data-reveal="fade-right">
+          <div class="contact-info-card">
+            <h3 class="contact-info-heading">Direct Channels</h3>
+            <p class="contact-info-lead">
+              Have an open software development role, internship, or technical question? You can reach me directly via
+              email, phone, or professional networks.
+            </p>
+
+            <div class="contact-methods-list">
+
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="item-label">Direct Email</span>
+                  <a href="mailto:amanibathini28@gmail.com" class="item-val">amanibathini28@gmail.com</a>
+                </div>
+                <button type="button" class="copy-btn" data-copy="amanibathini28@gmail.com"
+                  aria-label="Copy email address" title="Copy email">
+                  <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                  </svg>
+                  <span class="copy-tooltip">Copy</span>
+                </button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="item-label">Phone &amp; WhatsApp</span>
+                  <a href="tel:+919963896825" class="item-val">+91 9963896825</a>
+                </div>
+                <button type="button" class="copy-btn" data-copy="+919963896825" aria-label="Copy phone number"
+                  title="Copy phone">
+                  <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                  </svg>
+                  <span class="copy-tooltip">Copy</span>
+                </button>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="item-label">Location</span>
+                  <span class="item-val">Karimnagar / Hyderabad, Telangana, India</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Professional Profiles Row -->
+            <div class="profiles-section">
+              <span class="profiles-label">Professional Networks:</span>
+              <div class="profiles-links">
+                <a href="https://www.linkedin.com/in/amanibathini/" target="_blank" rel="noopener noreferrer"
+                  class="profile-card-link">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Amani-Bathini" target="_blank" rel="noopener noreferrer"
+                  class="profile-card-link">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://leetcode.com/u/amanibathini/" target="_blank" rel="noopener noreferrer"
+                  class="profile-card-link">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                  <span>LeetCode</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-column" data-reveal="fade-left">
+          <div class="contact-form-card">
+
+            <div class="form-header">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-sub">
+                Complete the fields below. A client-side validation check ensures all inputs are structured properly,
+                followed by an instant direct-email bridge.
+              </p>
+            </div>
+
+            <!-- Frontend-Only Disclosure Notice -->
+            <div class="frontend-disclosure-banner">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="16" x2="12" y2="12" />
+                <line x1="12" y1="8" x2="12.01" y2="8" />
+              </svg>
+              <span><strong>Note:</strong> This portfolio runs directly in the browser with no backend database.
+                Submitting will validate your input and open your email client pre-filled.</span>
+            </div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="contactName" name="name" class="form-input"
+                    placeholder="e.g. Sarah Jenkins (Recruiter / Lead)" required autocomplete="name">
+                </div>
+                <span class="field-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="contactEmail" name="email" class="form-input"
+                    placeholder="e.g. sarah.jenkins@company.com" required autocomplete="email">
+                </div>
+                <span class="field-error" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="contactSubject" name="subject" class="form-input"
+                    placeholder="e.g. Interview Opportunity - Python / AI Developer Role" required>
+                </div>
+                <span class="field-error" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="contactMessage" name="message" class="form-textarea" rows="4"
+                    placeholder="Hello Amani, we reviewed your projects and would love to discuss an entry-level software engineering opportunity with our team..."
+                    required></textarea>
+                </div>
+                <span class="field-error" id="messageError"></span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-block btn-submit" id="submitBtn">
+                  <span>Send Message via Email</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       K. FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+
+      <div class="footer-top-grid">
+
+        <!-- Brand Summary -->
+        <div class="footer-brand-col">
+          <a href="#top" class="footer-brand">
+            <span class="brand-monogram">AB</span>
+            <span class="brand-text">AMANI BATHINI</span>
+          </a>
+          <p class="footer-tagline">
+            Aspiring Software Developer &amp; AI/ML Enthusiast building intelligent applications, scalable RAG
+            architectures, and verified relational data models.
+          </p>
+          <div class="footer-status-pill">
+            <span class="status-dot"></span>
+            <span>2026 Graduate • Ready for Full-Time Roles</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#projects">Featured Projects</a></li>
+            <li><a href="#experience">Internship</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Featured Projects Links -->
+        <div class="footer-projects-col">
+          <h4 class="footer-heading">Engineering Systems</h4>
+          <ul class="footer-nav">
+            <li><a href="#projects">Smart Memory Vault (Multimodal RAG)</a></li>
+            <li><a href="#projects">IT Helpdesk (11-Table MySQL &amp; SLA)</a></li>
+            <li><a href="#experience">AI News Intelligent System (BERT 94.1%)</a></li>
+            <li><a href="assets/resume.pdf" download="Amani_Bathini_Resume.pdf">Official Resume (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Location -->
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">Contact Details</h4>
+          <p class="footer-contact-item">
+            <strong>Email:</strong> <a href="mailto:amanibathini28@gmail.com">amanibathini28@gmail.com</a>
+          </p>
+          <p class="footer-contact-item">
+            <strong>Phone:</strong> <a href="tel:+919963896825">+91 9963896825</a>
+          </p>
+          <p class="footer-contact-item">
+            <strong>Location:</strong> Karimnagar / Telangana, India
+          </p>
+          <div class="footer-social-row">
+            <a href="https://www.linkedin.com/in/amanibathini/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">LinkedIn</a>
+            <span>•</span>
+            <a href="https://github.com/Amani-Bathini" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub">GitHub</a>
+            <span>•</span>
+            <a href="https://leetcode.com/u/amanibathini/" target="_blank" rel="noopener noreferrer"
+              aria-label="LeetCode">LeetCode</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> <strong>Amani Bathini</strong>. All rights reserved. Designed with
+          Warm Ivory &amp; Deep Burgundy editorial aesthetics.
+        </p>
+
+        <a href="#top" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       MODAL 1: PROJECT 1 (SMART MEMORY VAULT ARCHITECTURE & SIMULATOR)
+       ======================================================== -->
+  <div class="modal-dialog-overlay" id="modal-project-1" aria-hidden="true" role="dialog" aria-labelledby="modal1Title">
+    <div class="modal-card modal-card-lg">
+      <div class="modal-header">
+        <div>
+          <span class="project-badge gold-badge">DEEP DIVE &amp; INTERACTIVE SIMULATOR</span>
+          <h3 class="modal-title" id="modal1Title">Smart Memory Vault: Multimodal RAG Assistant</h3>
+        </div>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+
+      <!-- Modal Tabs Header -->
+      <div class="modal-tab-nav" role="tablist">
+        <button class="modal-tab-btn active" data-tab-target="#p1-tab-arch" role="tab" aria-selected="true">Architecture
+          &amp; Metrics</button>
+        <button class="modal-tab-btn" data-tab-target="#p1-tab-sim" role="tab" aria-selected="false">Interactive RAG
+          Simulator</button>
+        <button class="modal-tab-btn" data-tab-target="#p1-tab-code" role="tab" aria-selected="false">Python Code
+          Blueprint</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Tab 1: Architecture & Metrics -->
+        <div class="modal-tab-pane active" id="p1-tab-arch">
+          <div class="modal-preview-box">
+            <img src="assets/images/smart-memory.png" alt="Smart Memory Vault Application Interface"
+              class="modal-img">
+          </div>
+
+          <h4 class="modal-section-title">Verified Resume Benchmarks</h4>
+          <div class="modal-stats-grid">
+            <div class="m-stat">
+              <span class="m-stat-val">50+</span>
+              <span class="m-stat-lbl">Documents Processed</span>
+            </div>
+            <div class="m-stat">
+              <span class="m-stat-val">300+</span>
+              <span class="m-stat-lbl">Semantic Chunks</span>
+            </div>
+            <div class="m-stat">
+              <span class="m-stat-val">91%</span>
+              <span class="m-stat-lbl">Top-3 Retrieval Accuracy</span>
+            </div>
+            <div class="m-stat">
+              <span class="m-stat-val">25+</span>
+              <span class="m-stat-lbl">Active Users</span>
+            </div>
+            <div class="m-stat">
+              <span class="m-stat-val">1.2s</span>
+              <span class="m-stat-lbl">Average Response Latency</span>
+            </div>
+          </div>
+
+          <h4 class="modal-section-title">System Pipeline Details</h4>
+          <ul class="modal-bullets">
+            <li><strong>Data Ingestion:</strong> Supports multi-format ingestion including PDFs, OCR scanned images via
+              Tesseract, YouTube video transcripts, and recorded audio notes into a 50+ document knowledge base.</li>
+            <li><strong>Hybrid Retrieval Engine:</strong> Overcomes single-vector blind spots by combining lexical
+              TF-IDF scoring with dense embedding similarity, calculating cosine distance across 300+ semantic chunks.
+            </li>
+            <li><strong>Grounded Citations:</strong> Answers are strictly attributed to source document references, page
+              numbers, and confidence scores, mitigating hallucinations.</li>
+            <li><strong>Automated NLP Pipelines:</strong> Categorization, summarization, sentiment scoring, and
+              auto-generated study flashcards/quizzes implemented via NLTK and scikit-learn.</li>
+            <li><strong>Production Security:</strong> Multi-user authentication secured via bcrypt password hashing with
+              PostgreSQL session management; deployed live on Streamlit Cloud.</li>
+          </ul>
+        </div>
+
+        <!-- Tab 2: Interactive RAG Simulator -->
+        <div class="modal-tab-pane" id="p1-tab-sim">
+          <div class="sim-container">
+            <div class="sim-header">
+              <span class="sim-title">Live RAG Pipeline Simulation (1.2s Latency Model)</span>
+              <span class="sim-status-tag"><span class="pulse-dot"></span> Ingested: 50 Docs (300 Chunks)</span>
+            </div>
+
+            <p class="sim-description">
+              Select or type a sample query below to simulate the Smart Memory Vault's hybrid retrieval pipeline with
+              verified cosine similarity and source citation grounding:
+            </p>
+
+            <div class="sim-presets">
+              <button type="button" class="sim-preset-chip active"
+                data-query="How does hybrid TF-IDF + Cosine embedding retrieval reduce hallucinations?">Query 1: Hybrid
+                Retrieval Grounding</button>
+              <button type="button" class="sim-preset-chip"
+                data-query="What is the pipeline for ingesting OCR images and YouTube transcripts?">Query 2: Multimodal
+                Ingestion</button>
+              <button type="button" class="sim-preset-chip"
+                data-query="How does bcrypt multi-user authentication secure the knowledge base?">Query 3: Security
+                &amp; Auth</button>
+            </div>
+
+            <div class="sim-input-row">
+              <input type="text" id="ragQueryInput" class="form-input sim-input"
+                value="How does hybrid TF-IDF + Cosine embedding retrieval reduce hallucinations?">
+              <button type="button" id="ragRunBtn" class="btn btn-primary btn-sm">Run Pipeline</button>
+            </div>
+
+            <!-- Simulation Output Screen -->
+            <div class="sim-output-screen" id="ragOutputScreen">
+              <div class="sim-latency-strip">
+                <span><strong>Execution Latency:</strong> 1.18s</span>
+                <span>•</span>
+                <span><strong>Confidence Score:</strong> 96.4%</span>
+                <span>•</span>
+                <span class="sim-tag-green">Top-3 Cosine Match: 0.941</span>
+              </div>
+              <div class="sim-result-body">
+                <h5 class="sim-result-title">Synthesized Knowledge Response:</h5>
+                <p id="ragSynthesizedText" class="sim-result-text">
+                  By pairing exact-keyword scoring (TF-IDF) with dense vector representations (Cosine Similarity), the
+                  system eliminates semantic drift and hallucination. Precise domain terminology is cross-referenced
+                  with exact chunk offsets and returned with verified source citations.
+                </p>
+                <div class="sim-citation-box">
+                  <span class="citation-label">Verified Grounding:</span>
+                  <span id="ragCitationFile" class="citation-file">[Source: ML_Survey_RAG.pdf • Chunk #42 • Page
+                    4]</span>
+                  <span class="citation-badge">Cosine: 0.941</span>
+                </div>
+                <div class="sim-flashcard-preview">
+                  <strong>Auto-Generated Flashcard:</strong>
+                  <p id="ragFlashcardText">"Q: Why does hybrid retrieval outperform single dense vector search? A: It
+                    balances semantic context with exact lexical keyword preservation."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Python Code Blueprint -->
+        <div class="modal-tab-pane" id="p1-tab-code">
+          <div class="code-block-wrapper">
+            <div class="code-block-header">
+              <span class="code-lang">python — hybrid_retrieval.py</span>
+              <button type="button" class="code-copy-btn" data-copy="import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+class HybridKnowledgeRetriever:
+    def __init__(self, semantic_chunks):
+        self.chunks = semantic_chunks
+        self.vectorizer = TfidfVectorizer(ngram_range=(1, 2), stop_words='english')
+        self.tfidf_matrix = self.vectorizer.fit_transform([c['text'] for c in self.chunks])
+
+    def query(self, user_query: str, alpha: float = 0.5, top_k: int = 3):
+        # 1. Lexical Scoring via TF-IDF
+        query_tfidf = self.vectorizer.transform([user_query])
+        lexical_scores = cosine_similarity(query_tfidf, self.tfidf_matrix).flatten()
+
+        # 2. Dense Semantic Scoring
+        query_dense = get_embeddings(user_query)
+        dense_scores = np.dot([c['embedding'] for c in self.chunks], query_dense)
+
+        # 3. Hybrid Ensembled Ranking
+        final_scores = (alpha * lexical_scores) + ((1 - alpha) * dense_scores)
+        top_indices = np.argsort(final_scores)[::-1][:top_k]
+
+        return [{'chunk': self.chunks[i], 'score': float(final_scores[i])} for i in top_indices]">Copy Code</button>
+            </div>
+            <pre
+              class="code-pre"><code><span class="c-keyword">import</span> numpy <span class="c-keyword">as</span> np
+<span class="c-keyword">from</span> sklearn.feature_extraction.text <span class="c-keyword">import</span> TfidfVectorizer
+<span class="c-keyword">from</span> sklearn.metrics.pairwise <span class="c-keyword">import</span> cosine_similarity
+
+<span class="c-keyword">class</span> <span class="c-class">HybridKnowledgeRetriever</span>:
+    <span class="c-keyword">def</span> <span class="c-func">__init__</span>(self, semantic_chunks):
+        self.chunks = semantic_chunks
+        self.vectorizer = TfidfVectorizer(ngram_range=(1, 2), stop_words=<span class="c-str">'english'</span>)
+        self.tfidf_matrix = self.vectorizer.fit_transform([c[<span class="c-str">'text'</span>] <span class="c-keyword">for</span> c <span class="c-keyword">in</span> self.chunks])
+
+    <span class="c-keyword">def</span> <span class="c-func">query</span>(self, user_query: str, alpha: float = 0.5, top_k: int = 3):
+        <span class="c-comment"># 1. Lexical Scoring via TF-IDF</span>
+        query_tfidf = self.vectorizer.transform([user_query])
+        lexical_scores = cosine_similarity(query_tfidf, self.tfidf_matrix).flatten()
+
+        <span class="c-comment"># 2. Dense Semantic Scoring (Cosine Vector Similarity)</span>
+        query_dense = get_embeddings(user_query)
+        dense_scores = np.dot([c[<span class="c-str">'embedding'</span>] <span class="c-keyword">for</span> c <span class="c-keyword">in</span> self.chunks], query_dense)
+
+        <span class="c-comment"># 3. Hybrid Ensembled Ranking</span>
+        final_scores = (alpha * lexical_scores) + ((1 - alpha) * dense_scores)
+        top_indices = np.argsort(final_scores)[::-1][:top_k]
+
+        <span class="c-keyword">return</span> [{<span class="c-str">'chunk'</span>: self.chunks[i], <span class="c-str">'score'</span>: float(final_scores[i])} <span class="c-keyword">for</span> i <span class="c-keyword">in</span> top_indices]</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/Amani-Bathini/smart-memory-vault-project" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary btn-sm">
+          <span>GitHub Code</span>
+        </a>
+        <a href="https://smart-memory-vault.streamlit.app/" target="_blank" rel="noopener noreferrer"
+          class="btn btn-secondary btn-sm">
+          <span>Live Streamlit App</span>
+        </a>
+        <button type="button" class="btn btn-ghost btn-sm" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL 2: PROJECT 2 (IT HELPDESK & TICKET MANAGEMENT)
+       ======================================================== -->
+  <div class="modal-dialog-overlay" id="modal-project-2" aria-hidden="true" role="dialog" aria-labelledby="modal2Title">
+    <div class="modal-card modal-card-lg">
+      <div class="modal-header">
+        <div>
+          <span class="project-badge burgundy-badge">DEEP DIVE &amp; INTERACTIVE SIMULATOR</span>
+          <h3 class="modal-title" id="modal2Title">IT Helpdesk: 11-Table Normalized MySQL Schema</h3>
+        </div>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+
+      <!-- Modal Tabs Header -->
+      <div class="modal-tab-nav" role="tablist">
+        <button class="modal-tab-btn active" data-tab-target="#p2-tab-arch" role="tab" aria-selected="true">Architecture
+          &amp; Metrics</button>
+        <button class="modal-tab-btn" data-tab-target="#p2-tab-sim" role="tab" aria-selected="false">Interactive SLA
+          &amp; Queue Simulator</button>
+        <button class="modal-tab-btn" data-tab-target="#p2-tab-code" role="tab" aria-selected="false">SQL Analytics
+          &amp; CTEs</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Tab 1: Architecture & Metrics -->
+        <div class="modal-tab-pane active" id="p2-tab-arch">
+          <div class="modal-preview-box">
+            <img src="assets/images/it-helpdesk.jpeg" alt="IT Helpdesk Application Interface"
+              class="modal-img">
+          </div>
+
+          <h4 class="modal-section-title">Verified Resume Benchmarks</h4>
+          <div class="modal-stats-grid">
+            <div class="m-stat">
+              <span class="m-stat-val">11</span>
+              <span class="m-stat-lbl">Normalized Tables</span>
+            </div>
+            <div class="m-stat">
+              <span class="m-stat-val">4</span>
+              <span class="m-stat-lbl">RBAC Roles</span>
+            </div>
+            <div class="m-stat">
+              <span class="m-stat-val">-40%</span>
+              <span class="m-stat-lbl">Routing Delay Reduction</span>
+            </div>
+            <div class="m-stat">
+              <span class="m-stat-val">94%+</span>
+              <span class="m-stat-lbl">SLA Compliance Rate</span>
+            </div>
+            <div class="m-stat">
+              <span class="m-stat-val">&lt;500ms</span>
+              <span class="m-stat-lbl">Dashboard Refresh Time</span>
+            </div>
+          </div>
+
+          <h4 class="modal-section-title">System Architecture Details</h4>
+          <ul class="modal-bullets">
+            <li><strong>Normalized Database Design:</strong> 11 interrelated MySQL tables enforcing 3NF principles to
+              eliminate data redundancy across users, tickets, department queues, SLA policies, and comments.</li>
+            <li><strong>Role-Based Access Control:</strong> 4 distinct roles (Admin, Agent, Manager, Employee) with
+              automated audit logging capturing every transition across 6+ lifecycle states.</li>
+            <li><strong>4-Tier Dynamic SLA Engine:</strong> Real-time timer calculation based on business hours and
+              urgency priorities; workload-aware auto-assignment distributes incoming tickets to the least-busy
+              qualified agent.</li>
+            <li><strong>SQL BI Analytics:</strong> 7+ views with CTEs and window functions calculate Mean Time to
+              Resolution (MTTR), SLA compliance percentages, and agent performance trends.</li>
+          </ul>
+        </div>
+
+        <!-- Tab 2: Interactive SLA & Queue Simulator -->
+        <div class="modal-tab-pane" id="p2-tab-sim">
+          <div class="sim-container">
+            <div class="sim-header">
+              <span class="sim-title">Live 4-Tier Dynamic SLA Engine &amp; Workload Auto-Assignment</span>
+              <span class="sim-status-tag"><span class="pulse-dot"></span> Compliance: 94.8%</span>
+            </div>
+
+            <p class="sim-description">
+              Simulate submitting an IT service incident to test the workload-aware auto-assignment algorithm (40% delay
+              reduction) and dynamic SLA timer calculation:
+            </p>
+
+            <div class="sim-control-grid">
+              <div class="sim-control-item">
+                <label for="simPrioritySelect" class="form-label">Incident Severity / SLA Tier:</label>
+                <select id="simPrioritySelect" class="form-input">
+                  <option value="P1" selected>P1 - Critical (1 Hour SLA Target)</option>
+                  <option value="P2">P2 - High Urgency (4 Hours SLA Target)</option>
+                  <option value="P3">P3 - Medium (24 Hours SLA Target)</option>
+                  <option value="P4">P4 - Low / Request (72 Hours SLA Target)</option>
+                </select>
+              </div>
+
+              <div class="sim-control-item">
+                <label for="simIssueTitle" class="form-label">Issue Summary:</label>
+                <input type="text" id="simIssueTitle" class="form-input"
+                  value="Production Database Replica Replication Delay &gt; 120s">
+              </div>
+            </div>
+
+            <button type="button" id="triggerSlaBtn" class="btn btn-primary btn-sm" style="margin-top: 1rem;">
+              Dispatch Ticket via SLA Engine
+            </button>
+
+            <!-- SLA Result Output -->
+            <div class="sim-output-screen" id="slaOutputScreen">
+              <div class="sim-latency-strip">
+                <span><strong>Execution:</strong> Sub-500ms (Query Time: 34ms)</span>
+                <span>•</span>
+                <span><strong>Status:</strong> State 2 (Auto-Assigned)</span>
+                <span>•</span>
+                <span class="sim-tag-green">Queue Routing Delay: -40%</span>
+              </div>
+
+              <div class="sim-result-body">
+                <h5 class="sim-result-title">Assigned Ticket Metadata:</h5>
+                <div class="sla-ticket-card">
+                  <div class="sla-t-header">
+                    <span id="slaTicketId" class="sla-t-id">#TK-8044</span>
+                    <span id="slaPriorityBadge" class="sla-badge-p1">P1 - CRITICAL</span>
+                    <span class="sla-countdown-live" id="slaCountdown">59m 58s remaining</span>
+                  </div>
+                  <p id="slaAssignedDetails" class="sla-t-text">
+                    <strong>Auto-Assigned Agent:</strong> Senior Infrastructure Specialist (Lowest active load: 2
+                    tickets)<br>
+                    <strong>Audit Log:</strong> State transitioned from <em>SUBMITTED</em> → <em>TRIAGED</em> →
+                    <em>ASSIGNED</em> with cryptographic timestamp.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: SQL Analytics & CTEs -->
+        <div class="modal-tab-pane" id="p2-tab-code">
+          <div class="code-block-wrapper">
+            <div class="code-block-header">
+              <span class="code-lang">sql — mttr_sla_analytics.sql</span>
+              <button type="button" class="code-copy-btn" data-copy="WITH AgentResolutionMetrics AS (
+    SELECT
+        t.assigned_agent_id,
+        u.full_name AS agent_name,
+        d.department_name,
+        TIMESTAMPDIFF(MINUTE, t.created_at, t.resolved_at) AS resolution_minutes,
+        CASE
+            WHEN TIMESTAMPDIFF(MINUTE, t.created_at, t.resolved_at) <= s.max_minutes_threshold
+            THEN 1 ELSE 0
+        END AS is_sla_compliant,
+        ROW_NUMBER() OVER(PARTITION BY t.assigned_agent_id ORDER BY t.resolved_at DESC) as recent_order
+    FROM tickets t
+    JOIN users u ON t.assigned_agent_id = u.id
+    JOIN departments d ON u.department_id = d.id
+    JOIN sla_policies s ON t.sla_tier_id = s.id
+    WHERE t.status IN ('RESOLVED', 'CLOSED')
+)
+SELECT
+    department_name,
+    agent_name,
+    ROUND(AVG(resolution_minutes), 1) AS mttr_minutes,
+    ROUND((SUM(is_sla_compliant) / COUNT(*)) * 100, 2) AS sla_compliance_pct,
+    COUNT(*) as total_resolved
+FROM AgentResolutionMetrics
+GROUP BY department_name, agent_name
+HAVING total_resolved >= 5
+ORDER BY sla_compliance_pct DESC;">Copy SQL</button>
+            </div>
+            <pre class="code-pre"><code><span class="c-keyword">WITH</span> AgentResolutionMetrics <span class="c-keyword">AS</span> (
+    <span class="c-keyword">SELECT</span>
+        t.assigned_agent_id,
+        u.full_name <span class="c-keyword">AS</span> agent_name,
+        d.department_name,
+        <span class="c-func">TIMESTAMPDIFF</span>(MINUTE, t.created_at, t.resolved_at) <span class="c-keyword">AS</span> resolution_minutes,
+        <span class="c-keyword">CASE</span>
+            <span class="c-keyword">WHEN</span> <span class="c-func">TIMESTAMPDIFF</span>(MINUTE, t.created_at, t.resolved_at) &lt;= s.max_minutes_threshold
+            <span class="c-keyword">THEN</span> 1 <span class="c-keyword">ELSE</span> 0
+        <span class="c-keyword">END</span> <span class="c-keyword">AS</span> is_sla_compliant,
+        <span class="c-func">ROW_NUMBER</span>() <span class="c-keyword">OVER</span>(<span class="c-keyword">PARTITION BY</span> t.assigned_agent_id <span class="c-keyword">ORDER BY</span> t.resolved_at <span class="c-keyword">DESC</span>) <span class="c-keyword">as</span> recent_order
+    <span class="c-keyword">FROM</span> tickets t
+    <span class="c-keyword">JOIN</span> users u <span class="c-keyword">ON</span> t.assigned_agent_id = u.id
+    <span class="c-keyword">JOIN</span> departments d <span class="c-keyword">ON</span> u.department_id = d.id
+    <span class="c-keyword">JOIN</span> sla_policies s <span class="c-keyword">ON</span> t.sla_tier_id = s.id
+    <span class="c-keyword">WHERE</span> t.status <span class="c-keyword">IN</span> (<span class="c-str">'RESOLVED'</span>, <span class="c-str">'CLOSED'</span>)
+)
+<span class="c-keyword">SELECT</span>
+    department_name,
+    agent_name,
+    <span class="c-func">ROUND</span>(<span class="c-func">AVG</span>(resolution_minutes), 1) <span class="c-keyword">AS</span> mttr_minutes,
+    <span class="c-func">ROUND</span>((<span class="c-func">SUM</span>(is_sla_compliant) / <span class="c-func">COUNT</span>(*)) * 100, 2) <span class="c-keyword">AS</span> sla_compliance_pct,
+    <span class="c-func">COUNT</span>(*) <span class="c-keyword">as</span> total_resolved
+<span class="c-keyword">FROM</span> AgentResolutionMetrics
+<span class="c-keyword">GROUP BY</span> department_name, agent_name
+<span class="c-keyword">HAVING</span> total_resolved &gt;= 5
+<span class="c-keyword">ORDER BY</span> sla_compliance_pct <span class="c-keyword">DESC</span>;</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/Amani-Bathini/it-helpdesk-ticket-management-system" target="_blank"
+          rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <span>GitHub Code</span>
+        </a>
+        <a href="https://it-desk-support.streamlit.app/" target="_blank" rel="noopener noreferrer"
+          class="btn btn-secondary btn-sm">
+          <span>Live Streamlit App</span>
+        </a>
+        <button type="button" class="btn btn-ghost btn-sm" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL 3: RESUME PREVIEW MODAL
+       ======================================================== -->
+  <div class="modal-dialog-overlay" id="modal-resume-preview" aria-hidden="true" role="dialog"
+    aria-labelledby="resumeModalTitle">
+    <div class="modal-card modal-card-lg">
+      <div class="modal-header">
+        <div>
+          <span class="project-badge gold-badge">OFFICIAL RESUME</span>
+          <h3 class="modal-title" id="resumeModalTitle">Amani Bathini - Resume Document</h3>
+        </div>
+        <div class="modal-actions-right">
+          <a href="assets/resume.pdf" class="btn btn-primary btn-sm" download="Amani_Bathini_Resume.pdf">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>Download PDF</span>
+          </a>
+          <button type="button" class="modal-close-btn" data-close-modal
+            aria-label="Close resume preview">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body modal-resume-body">
+        <iframe src="assets/resume.pdf" title="Amani Bathini Resume Preview" class="resume-frame"
+          id="resumeIframe"></iframe>
+      </div>
+
+      <div class="modal-footer">
+        <span class="modal-footnote">Telangana, India • amanibathini28@gmail.com • +91 9963896825</span>
+        <button type="button" class="btn btn-secondary btn-sm" data-close-modal>Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       FORM SUBMISSION FEEDBACK MODAL
+       ======================================================== -->
+  <div class="modal-dialog-overlay" id="modal-form-success" aria-hidden="true" role="dialog"
+    aria-labelledby="successModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="successModalTitle">Message Ready to Send!</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body text-center">
+        <div class="success-icon-circle">
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#2E7D5B" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </div>
+        <h4 style="margin-top: 14px; font-size: 1.15rem; color: #252329;">Thank you, <span
+            id="senderNameDisplay">Visitor</span>!</h4>
+        <p style="margin-top: 8px; color: #55505C; font-size: 0.95rem; line-height: 1.5;">
+          Your message has been validated. Because this website is hosted statically without a third-party tracking
+          backend, your native email client has been prepared with your message text addressed directly to
+          <strong>amanibathini28@gmail.com</strong>.
+        </p>
+        <div class="prepared-email-box" id="preparedEmailContent">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" id="directMailtoTrigger" class="btn btn-primary btn-sm">Open Email Client Now</a>
+        <button type="button" class="btn btn-secondary btn-sm" data-close-modal>Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="assertive" aria-atomic="true">
+    <span class="toast-message" id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
